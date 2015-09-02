@@ -1,0 +1,19 @@
+<h1>Modifica tus datos</h1>
+
+<form action="/edit_user/<%=@user.id%>" method="post">
+	<laber for ="name">Name -> <%= @user.name%> </label><br>
+	<input type="text" name="name" value=""><br>
+
+	<laber for ="last_name">Last name -> <%= @user.last_name %></label><br>
+	<input type="text" name="last_name" value=""><br>
+
+	<laber for ="email">Email-> <%= @user.email%> </label><br>
+	<input type="text" name="email" value=""><br>
+
+	<laber for ="name">Password</label><br>
+	<input type="password" name="password" value=""><br>
+
+	<input type="submit" name="submit" value="Actualiza">
+</form><br><br>
+
+<a href="/user_home"> Home</a>
